@@ -1,7 +1,8 @@
 Package: bagels
 Title: a shiny version of (pico fermi) bagels
 Version: 0.0.0.9000
-Authors@R: person("Anne-Wil", "Kruijt", email = "mail@awkruijt.n;", role = c("aut", "cre"))
+Authors@R: person("Anne-Wil", "Kruijt", email = "mail@awkruijt.nl", role = c("aut", "cre"))
+Maintainer: Anne-Wil Kruijt <mail@awkruijt.nl>
 Description: A procrastination case: play bagels in r.
      bagels() to play with default settings (3 digits to guess in max 8 guesses)
      bagels(ndigits = ndigits, nguesses = nguesess) to modify number of digits and/or guesses.
@@ -14,3 +15,5 @@ Imports:
     shiny,
     shinyjs,
     shinyWidgets
+URL: http://awkruijt/bagels/
+BugReports: https://github.com/awkruijt/bagels/issues
