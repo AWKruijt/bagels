@@ -62,7 +62,7 @@ shinyApp(
         output[[paste0("clue", n)]] <-  renderText({""}) }
 
       gvector <<- as.character(sample(0:9,ndigits))
-      print(gvector)
+      # print(gvector)
       enable("guess1")
       session$sendCustomMessage("refocus",list("guess1"))
       gcurrent <- 1
