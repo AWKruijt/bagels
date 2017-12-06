@@ -44,7 +44,7 @@ shinyApp(
                lapply(1:nguesses, function(i) {
                  splitLayout(cellWidths = c("4%","22%", "10%", "65%"),
                              br(),
-                             textInput(paste0('guess', i), "", placeholder = paste0(rep("x", ndigits)) ) ,
+                             textInput(paste0('guess', i), "", placeholder = cat(paste(rep("x", ndigits), collapse = "" ) )) ,
                              br(),
                              h5(textOutput(paste0('clue', i))) )})) )),
 
