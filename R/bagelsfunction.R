@@ -58,7 +58,7 @@ shinyApp(
       for (n in 1: nguesses){
         disable(paste0("guess", n))
         disable(paste0("clue",n))
-        updateTextInput(session, paste0("guess", n), label = NULL, value = "", placeholder = paste(rep("x", ndigits), collapse = ""))
+        updateTextInput(session, paste0("guess", n), label = NULL, value = "", placeholder = cat(paste(rep("x", ndigits), collapse = "")))
         output[[paste0("clue", n)]] <-  renderText({""}) }
 
       gvector <<- as.character(sample(0:9,ndigits))
